@@ -35,3 +35,23 @@ function cardSelected(selectedCard) {
         }
     });
 }
+
+
+// Gallery System
+const photosArr = document.querySelectorAll('.gal-box span') ;
+const galOv = document.querySelector('.gal-big');
+const galOvImg = document.querySelector('.gal-big img');
+
+galOv.addEventListener('click',function(e){
+  if(e.target==this){
+    galOv.classList.remove('show-galbig');
+  }
+})
+
+photosArr.forEach((p)=>{
+  p.addEventListener('click',function(){
+    let src = p.children[0].getAttribute('src');
+    galOvImg.setAttribute('src',src)
+    galOv.classList.add('show-galbig')
+  })
+})
