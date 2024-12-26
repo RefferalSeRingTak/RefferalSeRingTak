@@ -14,10 +14,10 @@ function dates() {
     hh %= 60;
     var rseconds = hh;
 
-    document.getElementById('days').innerHTML = parseInt(day);
-    document.getElementById('hours').innerHTML = parseInt(hour);
-    document.getElementById('minutes').innerHTML = parseInt(minutes);
-    document.getElementById('seconds').innerHTML = parseInt(rseconds);
+    document.getElementById('days').innerHTML = parseInt(day) + "Days";
+    document.getElementById('hours').innerHTML = parseInt(hour) + "Hours";
+    document.getElementById('minutes').innerHTML = parseInt(minutes) + "Minutes";
+    document.getElementById('seconds').innerHTML = parseInt(rseconds) + "Seconds";
 }
 
 setInterval(dates, 1000);
