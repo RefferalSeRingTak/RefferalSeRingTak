@@ -15,6 +15,7 @@ function dates() {
     var rseconds = hh;
 
     document.getElementById('days').innerHTML = parseInt(day) + "Days";
+    console.log("harsh: The days is" + document.getElementById('days').innerHTML );
     document.getElementById('hours').innerHTML = parseInt(hour) + "Hours";
     document.getElementById('minutes').innerHTML = parseInt(minutes) + "Minutes";
     document.getElementById('seconds').innerHTML = parseInt(rseconds) + "Seconds";
